@@ -5,6 +5,13 @@ WORKDIR /app
 # Copy only package.json and yarn-lock.json to install dependencies
 COPY package.json yarn.lock ./
 
+# Set ENV from docker-compose build args
+ENV NEXT_PUBLIC_MEDUSA_BACKEND_URL=$NEXT_PUBLIC_MEDUSA_BACKEND_URL
+ENV MEILISEARCH_HOST=$MEILISEARCH_HOST
+ENV MEILISEARCH_API_KEY=$MEILISEARCH_API_KEY
+ENV NEXT_PUBLIC_SEARCH_INDEX_NAME=$NEXT_PUBLIC_SEARCH_INDEX_NAME
+
+# Install dependencies
 RUN yarn install
 
 # Copy the rest of the application code to the container
