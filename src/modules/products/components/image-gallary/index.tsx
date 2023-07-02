@@ -38,7 +38,6 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
                 className="absolute inset-0"
                 alt="Thumbnail"
                 fill
-                sizes="100vw"
                 style={{
                   objectFit: "cover",
                 }}

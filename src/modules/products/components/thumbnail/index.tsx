@@ -42,7 +42,6 @@ const ImageOrPlaceholder = ({
       className="absolute inset-0"
       draggable={false}
       fill
-      sizes="100vw"
       style={{
         objectFit: "cover",
         objectPosition: "center",
