@@ -71,8 +71,16 @@ const Nav = () => {
           </div>
 
           <div className="flex items-center h-full">
-            <Link href="/" className="text-xl-semi uppercase">
-              Acme
+          <Link href="/" className="text-xl-semi uppercase flex items-center gap-x-2">
+    <img
+      src="https://cdn.jsdelivr.net/gh/jxto13/memorias-douradas-media@d0a2e2835d4907c19f88508cf1639268b1775f0f/public/bia_logo.svg"
+      alt="Memórias Douradas"
+      width={80}
+      height={30}
+
+    />
+              <div className="mt-3 mb-3">
+Memórias Douradas</div>
             </Link>
           </div>
 

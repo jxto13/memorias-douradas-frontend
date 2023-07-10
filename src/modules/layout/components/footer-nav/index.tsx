@@ -11,7 +11,7 @@ const FooterNav = () => {
       <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between">
         <div>
           <Link href="/" className="text-xl-semi uppercase">
-            Acme
+            Memórias Douradas
           </Link>
         </div>
         <div className="text-small-regular grid grid-cols-2 gap-x-16">
@@ -65,7 +65,7 @@ const FooterNav = () => {
       </div>
       <div className="flex flex-col-reverse gap-y-4 justify-center xsmall:items-center xsmall:flex-row xsmall:items-end xsmall:justify-between">
         <span className="text-xsmall-regular text-gray-500">
-          © Copyright 2022 ACME
+          © Copyright 2023 Memórias Douradas
         </span>
         <div className="min-w-[316px] flex xsmall:justify-end">
           <CountrySelect />

@@ -15,7 +15,7 @@ const Hero = () => {
         <UnderlineLink href="/store">Explore products</UnderlineLink>
       </div>
       <Image
-        src="/hero.jpg"
+        src="https://cdn.jsdelivr.net/gh/jxto13/memorias-douradas-media@47e3885f909d7eada7c3071e669fc841a0b0c2aa/public/pxo.jpg"
         loading="eager"
         priority={true}
         quality={90}
