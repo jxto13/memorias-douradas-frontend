@@ -26,7 +26,7 @@ const MainMenu = () => {
   return (
     <div className="flex flex-col flex-1">
       <div className="flex items-center justify-between w-full border-b border-gray-200 py-4 px-6">
-        <div className="flex-1 basis-0">
+        {/* <div className="flex-1 basis-0">
           <button
             className="flex items-center gap-x-2"
             onClick={setScreenCountry}
@@ -34,10 +34,10 @@ const MainMenu = () => {
             <ReactCountryFlag countryCode={countryCode || "us"} svg />
             <ChevronDown />
           </button>
-        </div>
-        <div>
+        </div> 
+         <div>
           <h1 className="text-xl-semi uppercase">Memórias Douradas</h1>
-        </div>
+        </div> */}
         <div className="flex-1 basis-0 flex justify-end">
           <button onClick={close}>
             <X size={20} />

@@ -21,11 +21,11 @@ const CartDropdown = () => {
   return (
     <div className="h-full z-50" onMouseEnter={open} onMouseLeave={close}>
       <Popover className="relative h-full">
-          <Popover.Button className="h-full flex items-center gap-1">
-        <Link href="/cart" passHref>
-            <Cart/>{`(${totalItems})`}
-        </Link>
-          </Popover.Button>
+        <Popover.Button className="h-full flexflex-row">
+          <Link className="flex gap-1" href="/cart" passHref>
+            <Cart />{`(${totalItems})`}
+          </Link>
+        </Popover.Button>
         <Transition
           show={state}
           as={Fragment}
