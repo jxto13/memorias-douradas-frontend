@@ -2,20 +2,29 @@ import React from "react"
 import { IconProps } from "types/icon"
 
 const Cart: React.FC<IconProps> = ({
-  size = "20",
+  size = "25",
   color = "currentColor",
   ...attributes
 }) => {
   return (
+    
     <svg
       width={size}
       height={size}
-      viewBox="0 0 20 20"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...attributes}
     >
-      <path
+      
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      stroke={color}
+      strokeWidth="1.5"
+      d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+    />
+      {/* <path
         d="M5.70291 11.7848L4.18457 5.34766H16.6736C17.3175 5.34766 17.7893 5.89045 17.633 6.45189L16.2997 11.242C16.0969 11.9695 15.4084 12.5043 14.5776 12.579L7.83552 13.1848C6.83054 13.2745 5.91162 12.6713 5.70291 11.7848V11.7848Z"
         stroke={color}
         strokeWidth="1.5"
@@ -42,7 +51,7 @@ const Cart: React.FC<IconProps> = ({
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-      />
+      /> */}
     </svg>
   )
 }

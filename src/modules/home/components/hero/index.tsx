@@ -43,7 +43,7 @@ const Hero = () => {
           </p>
         </header> */}
 
-        <ul className="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-3">
+        <ul className="grid grid-cols-1 gap-4  lg:grid-cols-3">
           <li>
             <a href="#" className="relative block group">
               <img

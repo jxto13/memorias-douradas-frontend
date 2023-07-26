@@ -21,10 +21,18 @@ const CartDropdown = () => {
   return (
     <div className="h-full z-50" onMouseEnter={open} onMouseLeave={close}>
       <Popover className="relative h-full">
-        <Popover.Button className="h-full flexflex-row">
-          <Link className="flex gap-1" href="/cart" passHref>
-            <Cart />{`(${totalItems})`}
+        <Popover.Button className="h-full flex items-center justify-center"> {/* Added "items-center" and "justify-center" */}
+        <div className=" border-solid border-2 border-current p-1 rounded-full">
+          <Link className="flex gap-1 items-center" href="/cart" passHref> {/* Added "items-center" */}
+            <Cart />
+            <span className="inline-block align-middle">
+              <div className="bg-gray-900 text-small-regular flex items-center justify-center w-6 h-6 rounded-full text-white">
+                <span>{totalItems}</span>
+              </div>
+
+            </span>
           </Link>
+          </div>
         </Popover.Button>
         <Transition
           show={state}
@@ -119,9 +127,9 @@ const CartDropdown = () => {
             ) : (
               <div>
                 <div className="flex py-16 flex-col gap-y-4 items-center justify-center">
-                  <div className="bg-gray-900 text-small-regular flex items-center justify-center w-6 h-6 rounded-full text-white">
+                  {/* <div className="bg-gray-900 text-small-regular flex items-center justify-center w-6 h-6 rounded-full text-white">
                     <span>0</span>
-                  </div>
+                  </div> */}
                   <span>Your shopping bag is empty.</span>
                   <div>
                     <Link href="/store">
