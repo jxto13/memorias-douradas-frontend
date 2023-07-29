@@ -26,8 +26,8 @@ const CartDropdown = () => {
           <Link className="flex gap-1 items-center" href="/cart" passHref> {/* Added "items-center" */}
             <Cart />
             <span className="inline-block align-middle">
-              <div className="bg-gray-900 text-small-regular flex items-center justify-center w-6 h-6 rounded-full text-white">
-                <span>{totalItems}</span>
+              <div className="bg-gray-900 dark:bg-white text-small-regular flex items-center justify-center w-6 h-6 rounded-full text-white">
+                <span className="text-white dark:text-black">{totalItems}</span>
               </div>
 
             </span>
