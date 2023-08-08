@@ -6,6 +6,7 @@ import { ThreeItemGrid } from '@modules/home/components/carousel/grid/three-item
 import Layout from "@modules/layout/templates"
 import { ReactElement } from "react"
 import { NextPageWithLayout, ProductPreviewType } from "types/global"
+import { EmblaOptionsType } from 'embla-carousel-react'
 
 // Create example product data for firstProduct
 const firstProduct: ProductPreviewType = {
@@ -51,7 +52,8 @@ const thirdProduct: ProductPreviewType = {
 
 
 const Home: NextPageWithLayout = () => {
-  
+  const OPTIONS: EmblaOptionsType = { dragFree: true, containScroll: 'trimSnaps' }
+
   return (
     <>
       <Head
@@ -63,9 +65,7 @@ const Home: NextPageWithLayout = () => {
         secondProduct={secondProduct}
         thirdProduct={thirdProduct}
       />
-      {/* <Hero /> */}
-      {/* <FeaturedProducts /> */}
-      <Carousel/>
+      <Carousel options={OPTIONS}/>
     </>
   )
 }

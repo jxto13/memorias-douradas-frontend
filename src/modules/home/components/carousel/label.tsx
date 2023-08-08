@@ -4,12 +4,10 @@ import Price from './price';
 const Label = ({
   title,
   amount,
-  currencyCode,
   position = 'bottom'
 }: {
   title: string;
   amount: string;
-  currencyCode: string;
   position?: 'bottom' | 'center';
 }) => {
   return (
@@ -18,12 +16,11 @@ const Label = ({
         'lg:px-20 lg:pb-[35%]': position === 'center'
       })}
     >
-      <div className="flex items-center rounded-full border bg-white/70 p-1 text-[10px] font-semibold text-black backdrop-blur-md @[275px]/label:text-xs dark:border-neutral-800 dark:bg-black/70 dark:text-white">
+      <div className="flex items-center rounded-full border bg-white/70 p-1 text-[10px] font-semibold text-black backdrop-blur-md @[275px]/label:text-xs ">
         <h3 className="mr-4 inline pl-2 leading-none tracking-tight">{title}</h3>
         <Price
           className="flex-none rounded-full bg-blue-600 p-2 text-white"
           amount={amount}
-          currencyCode={currencyCode}
           currencyCodeClassName="hidden @[275px]/label:inline"
         />
       </div>

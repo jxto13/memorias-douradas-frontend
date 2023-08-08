@@ -5,13 +5,13 @@ import { ThemeProvider } from 'next-themes'
 
 const Layout: React.FC = ({ children }) => {
   return (
-    <ThemeProvider >
+    // <ThemeProvider >
     <div>
       <Nav />
       <main className="relative">{children}</main>
       <Footer />
     </div>
-    </ThemeProvider> 
+    // </ThemeProvider> 
   )
 }
 

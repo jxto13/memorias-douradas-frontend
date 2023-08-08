@@ -22,6 +22,7 @@ const MainMenu = () => {
 
   const setScreenCountry = () => setScreen("country")
   const setScreenSearch = () => setScreen("search")
+  const setScreenStore = () => setScreen("store")
 
   return (
     <div className="flex flex-col flex-1">
@@ -58,7 +59,26 @@ const MainMenu = () => {
           </button>
         )}
 
+        {/* Main list of items bellow search box */}
         <div className="flex flex-col flex-1 text-large-regular text-gray-900">
+          <ul className="flex flex-col gap-y-2">
+
+            {/* List item for store sub menu */}
+            <li className="bg-gray-50 p-4">
+              <button
+                className="flex items-center justify-between w-full"
+                onClick={setScreenStore}
+              >
+                <span className="sr-only">Go to Store</span>
+                <span>Store</span>
+                <ChevronDown className="-rotate-90" />
+              </button>
+            </li>
+
+            {/* Next item goes here */}
+          </ul>
+        </div>
+        {/* <div className="flex flex-col flex-1 text-large-regular text-gray-900">
           <ul className="flex flex-col gap-y-2">
             <li className="bg-gray-50 p-4">
               <Link href="/store">
@@ -93,7 +113,7 @@ const MainMenu = () => {
               </>
             ) : null}
           </ul>
-        </div>
+        </div> */}
 
         <div className="flex flex-col">
           <div className="flex flex-col gap-y-8 text-small-regular">

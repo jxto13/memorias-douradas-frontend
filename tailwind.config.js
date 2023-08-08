@@ -5,8 +5,6 @@ module.exports = {
     "./src/modules/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    darkMode: 'class',
-    enableSystem: 'false',
     extend: {
       transitionProperty: {
         "width": "width",
@@ -38,5 +36,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
