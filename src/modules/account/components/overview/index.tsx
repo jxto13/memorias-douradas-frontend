@@ -129,7 +129,7 @@ const Overview = ({ orders, customer }: OverviewProps) => {
                                 {formatAmount({
                                   amount: order.total,
                                   region: order.region,
-                                  includeTaxes: false,
+                                  includeTaxes: true,
                                 })}
                               </span>
                             </div>

@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import Price from './price';
+import Price from '../price';
 
 const Label = ({
   title,

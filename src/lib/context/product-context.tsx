@@ -86,11 +86,9 @@ export const ProductProvider = ({
     return variants.find((v) => v.id === variantId)
   }, [options, variantRecord, variants])
 
-  // if product only has one variant, then select it
+  // if product only has one variant, then select it, else select the first
   useEffect(() => {
-    if (variants.length === 1) {
       setOptions(variantRecord[variants[0].id])
-    }
   }, [variants, variantRecord])
 
   const disabled = useMemo(() => {
@@ -124,7 +122,8 @@ export const ProductProvider = ({
       addItem({
         variantId: variant.id,
         quantity,
-      })
+      });
+      scrollToTop();
     }
   }
 
@@ -147,6 +146,15 @@ export const ProductProvider = ({
       }
     }
   }
+
+  // Scroll to the top
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
 
   return (
     <ProductActionContext.Provider

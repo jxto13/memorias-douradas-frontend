@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import Image from 'next/image';
-import Label from '../label';
+import Label from './label';
 
-export function GridTileImage({
+export function ProductCard({
   isInteractive = true,
   active,
   label,
@@ -13,14 +13,13 @@ export function GridTileImage({
   label?: {
     title: string;
     amount: string;
-    currencyCode: string;
     position?: 'bottom' | 'center';
   };
 } & React.ComponentProps<typeof Image>) {
   return (
     <div
       className={clsx(
-        'flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-gray-900 hover:border-blue-600 ',
+        'flex h-full w-full items-center justify-center overflow-hidden rounded-lg border-2 bg-white border-gray-900 hover:border-blue-600 ',
         {
           relative: label,
           'border-2 border-blue-600': active,
@@ -41,7 +40,6 @@ export function GridTileImage({
         <Label
           title={label.title}
           amount={label.amount}
-          currencyCode={label.currencyCode}
           position={label.position}
         />
       ) : null}

@@ -82,7 +82,7 @@ const fetchFeaturedProducts = async (
               calculated_price: formatAmount({
                 amount: cheapestVariant.calculated_price,
                 region: region,
-                includeTaxes: false,
+                includeTaxes: true,
               }),
               original_price: formatAmount({
                 amount: cheapestVariant.original_price,

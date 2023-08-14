@@ -27,7 +27,7 @@ const Nav = () => {
               <div className="mt-3 mb-3 hidden md:block">
                 Memórias</div>
               <Image
-                src="https://cdn.jsdelivr.net/gh/jxto13/memorias-douradas-media@d0a2e2835d4907c19f88508cf1639268b1775f0f/public/bia_logo.svg"
+                src="https://cdn.jsdelivr.net/gh/jxto13/memorias-douradas-media@main/public/logo.svg"
                 loading="eager"
                 priority={true}
                 alt="Logo"

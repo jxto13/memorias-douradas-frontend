@@ -1,8 +1,6 @@
 import { Image as MedusaImage } from "@medusajs/medusa"
 import Image from "next/image"
-import React, { useState, useEffect, useCallback, useRef } from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
-// import { Thumb } from "./EmblaCarouselThumbsButton"
+import { useRef } from 'react'
 
 
 type ImageGalleryProps = {
@@ -22,33 +20,6 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
       })
     }
   }
-
-  const [selectedIndex, setSelectedIndex] = useState(0)
-  const [emblaMainRef, emblaMainApi] = useEmblaCarousel()
-  const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
-    containScroll: 'keepSnaps',
-    dragFree: true
-  })
-  const onThumbClick = useCallback(
-    (index: number) => {
-      if (!emblaMainApi || !emblaThumbsApi) return
-      emblaMainApi.scrollTo(index)
-    },
-    [emblaMainApi, emblaThumbsApi]
-  )
-
-  const onSelect = useCallback(() => {
-    if (!emblaMainApi || !emblaThumbsApi) return
-    setSelectedIndex(emblaMainApi.selectedScrollSnap())
-    emblaThumbsApi.scrollTo(emblaMainApi.selectedScrollSnap())
-  }, [emblaMainApi, emblaThumbsApi, setSelectedIndex])
-
-  useEffect(() => {
-    if (!emblaMainApi) return
-    onSelect()
-    emblaMainApi.on('select', onSelect)
-    emblaMainApi.on('reInit', onSelect)
-  }, [emblaMainApi, onSelect])
 
   return (
     <div className="flex items-start relative">
@@ -102,6 +73,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
         })}
       </div>
     </div>
+
   )
 }
 
