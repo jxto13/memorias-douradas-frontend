@@ -1,3 +1,5 @@
+
+
 import { medusaClient } from "@lib/config"
 import { getPercentageDiff } from "@lib/util/get-precentage-diff"
 import { Product, ProductCollection, Region } from "@medusajs/medusa"
@@ -54,7 +56,7 @@ const fetchFeaturedProducts = async (
   const products = await medusaClient.products
     .list({
       is_giftcard: false,
-      limit: 4,
+      limit: 8,
       cart_id: cartId,
     })
     .then(({ products }) => products)
@@ -82,7 +84,7 @@ const fetchFeaturedProducts = async (
               calculated_price: formatAmount({
                 amount: cheapestVariant.calculated_price,
                 region: region,
-                includeTaxes: false,
+                includeTaxes: true,
               }),
               original_price: formatAmount({
                 amount: cheapestVariant.original_price,

@@ -2,7 +2,7 @@ import React from "react"
 import { IconProps } from "types/icon"
 
 const Search: React.FC<IconProps> = ({
-  size = "16",
+  size = "25",
   color = "currentColor",
   ...attributes
 }) => {

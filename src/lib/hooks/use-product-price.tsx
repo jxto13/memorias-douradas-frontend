@@ -48,7 +48,7 @@ const useProductPrice = ({ id, variantId }: useProductPriceProps) => {
       calculated_price: formatAmount({
         amount: cheapestVariant.calculated_price,
         region: cart.region,
-        includeTaxes: false,
+        includeTaxes: true,
       }),
       original_price: formatAmount({
         amount: cheapestVariant.original_price,
@@ -80,7 +80,7 @@ const useProductPrice = ({ id, variantId }: useProductPriceProps) => {
       calculated_price: formatAmount({
         amount: variant.calculated_price,
         region: cart.region,
-        includeTaxes: false,
+        includeTaxes: true,
       }),
       original_price: formatAmount({
         amount: variant.original_price,

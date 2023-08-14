@@ -89,7 +89,7 @@ const ProfileName: React.FC<MyInformationProps> = ({ customer }) => {
             errors={errors}
           />
           <Input
-            label="Last name"
+            label="Último Nome"
             {...register("last_name", { required: true })}
             defaultValue={lastName}
             errors={errors}

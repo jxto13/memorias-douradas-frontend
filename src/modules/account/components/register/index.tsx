@@ -49,33 +49,32 @@ const Register = () => {
           <Spinner size={24} />
         </div>
       )}
-      <h1 className="text-large-semi uppercase mb-6">Become a Acme Member</h1>
+      <h1 className="text-large-semi uppercase mb-6">Torne-se um membro</h1>
       <p className="text-center text-base-regular text-gray-700 mb-4">
-        Create your Acme Member profile, and get access to an enhanced shopping
-        experience.
+        Crie o seu perfil para ter acesso a uma melhor experiência.
       </p>
       <form className="w-full flex flex-col" onSubmit={onSubmit}>
         <div className="flex flex-col w-full gap-y-2">
           <Input
-            label="First name"
-            {...register("first_name", { required: "First name is required" })}
+            label="Primeiro Nome"
+            {...register("first_name", { required: "First name é necessário" })}
             autoComplete="given-name"
             errors={errors}
           />
           <Input
-            label="Last name"
-            {...register("last_name", { required: "Last name is required" })}
+            label="Último Nome"
+            {...register("last_name", { required: "Último Nome é necessário" })}
             autoComplete="family-name"
             errors={errors}
           />
           <Input
             label="Email"
-            {...register("email", { required: "Email is required" })}
+            {...register("email", { required: "Email é necessário" })}
             autoComplete="email"
             errors={errors}
           />
           <Input
-            label="Phone"
+            label="Telemóvel"
             {...register("phone")}
             autoComplete="tel"
             errors={errors}
@@ -83,7 +82,7 @@ const Register = () => {
           <Input
             label="Password"
             {...register("password", {
-              required: "Password is required",
+              required: "Password é necessário",
             })}
             type="password"
             autoComplete="new-password"
@@ -93,30 +92,26 @@ const Register = () => {
         {authError && (
           <div>
             <span className="text-rose-500 w-full text-small-regular">
-              These credentials do not match our records
+            As suas credências não estão nos nossos registos
             </span>
           </div>
         )}
         <span className="text-center text-gray-700 text-small-regular mt-6">
-          By creating an account, you agree to Acme&apos;s{" "}
-          <Link href="/content/privacy-policy" className="underline">
-            Privacy Policy
+          Ao criar uma conta você aceita os {" "}
+          <Link href="/privacy-policy" className="underline">
+            termos de uso e privacidade 
           </Link>{" "}
-          and{" "}
-          <Link href="/content/terms-of-use" className="underline">
-            Terms of Use
-          </Link>
-          .
+          de Memórias Douradas.
         </span>
         <Button className="mt-6">Join</Button>
       </form>
       <span className="text-center text-gray-700 text-small-regular mt-6">
-        Already a member?{" "}
+        Já é membro?{" "}
         <button
           onClick={() => setCurrentView(LOGIN_VIEW.SIGN_IN)}
           className="underline"
         >
-          Sign in
+          Entrar
         </button>
         .
       </span>

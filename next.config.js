@@ -8,11 +8,7 @@ module.exports = withStoreConfig({
   features: store.features,
   reactStrictMode: true,
   images: {
-    domains: [
-      "medusa-public-images.s3.eu-west-1.amazonaws.com",
-      "localhost",
-      "medusa-server-testing.s3.amazonaws.com",
-    ],
+    domains: ["medusa-public-images.s3.eu-west-1.amazonaws.com", "localhost", "cdn.jsdelivr.net"],
   },
 })
 

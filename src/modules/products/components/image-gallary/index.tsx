@@ -1,6 +1,7 @@
 import { Image as MedusaImage } from "@medusajs/medusa"
 import Image from "next/image"
-import { useRef } from "react"
+import { useRef } from 'react'
+
 
 type ImageGalleryProps = {
   images: MedusaImage[]
@@ -72,6 +73,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
         })}
       </div>
     </div>
+
   )
 }
 

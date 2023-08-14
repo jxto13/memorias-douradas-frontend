@@ -58,7 +58,7 @@ const ControlledSearchBox = ({
             <button
               onClick={handleReset}
               type="button"
-              className="h-5 w-5 rounded-full flex items-center justify-center text-gray-900 bg-gray-200"
+              className="ml-2 h-5 w-5 rounded-full flex items-center justify-center text-gray-900 bg-gray-200"
             >
               <X size={12} />
             </button>

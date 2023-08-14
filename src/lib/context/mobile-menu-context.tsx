@@ -13,7 +13,7 @@ import {
   useState,
 } from "react"
 
-type ScreenType = "main" | "country" | "search"
+type ScreenType = "main" | "country" | "search" | "store"
 
 interface MobileMenuContext {
   state: boolean
@@ -45,11 +45,11 @@ export const MobileMenuProvider = ({
     }, 500)
   }, [close])
 
-  useEffect(() => {
-    if (state && debouncedWith >= 1024) {
-      closeMenu()
-    }
-  }, [debouncedWith, state, closeMenu])
+  // useEffect(() => {
+  //   if (state && debouncedWith <= 1024) {
+  //     closeMenu()
+  //   }
+  // }, [debouncedWith, state, closeMenu])
 
   useEffect(() => {}, [debouncedWith])
 

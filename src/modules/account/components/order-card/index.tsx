@@ -31,7 +31,7 @@ const OrderCard = ({ order }: OrderCardProps) => {
           {formatAmount({
             amount: order.total,
             region: order.region,
-            includeTaxes: false,
+            includeTaxes: true,
           })}
         </span>
         <span className="pl-2">{`${numberOfLines} ${
@@ -60,13 +60,13 @@ const OrderCard = ({ order }: OrderCardProps) => {
             <span className="text-small-regular text-gray-700">
               + {numberOfLines - 4}
             </span>
-            <span className="text-small-regular text-gray-700">more</span>
+            <span className="text-small-regular text-gray-700">mais</span>
           </div>
         )}
       </div>
       <div className="flex justify-end">
         <Link href={`/order/details/${order.id}`}>
-          <Button variant="secondary">See details</Button>
+          <Button variant="secondary">Ver detalhes</Button>
         </Link>
       </div>
     </div>

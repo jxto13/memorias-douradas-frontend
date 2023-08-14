@@ -1,18 +1,20 @@
-import FeaturedProducts from "@modules/home/components/featured-products"
-import Hero from "@modules/home/components/hero"
+import Carousel from "@modules/home/components/carousel"
+import Info from "@modules/home/components/info"
+import Welcome from "@modules/home/components/welcome"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Página Inicial",
   description:
-    "Shop all available models only at the ACME. Worldwide Shipping. Secure Payment.",
+    "Loja com pequenas memórias do Porto Santo",
 }
 
 const Home = () => {
   return (
     <>
-      <Hero />
-      <FeaturedProducts />
+      <Welcome/>
+      <Carousel />
+      <Info />
     </>
   )
 }
