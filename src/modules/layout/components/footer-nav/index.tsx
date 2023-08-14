@@ -14,8 +14,8 @@ const FooterNav = () => {
             Memórias Douradas
           </Link>
         </div>
-        <div className="text-small-regular grid grid-cols-2 gap-x-16">
-          <div className="flex flex-col gap-y-2">
+        <div className="text-small-regular  gap-x-16">
+          {/* <div className="flex flex-col gap-y-2">
             <span className="text-base-semi">Collections</span>
             <ul
               className={clsx("grid grid-cols-1 gap-y-2", {
@@ -28,7 +28,7 @@ const FooterNav = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
           <div className="flex flex-col gap-y-2">
             <span className="text-base-semi">Medusa</span>
             <ul className="grid grid-cols-1 gap-y-2">

@@ -45,21 +45,21 @@ const Login = () => {
           <Spinner size={24} />
         </div>
       )}
-      <h1 className="text-large-semi uppercase mb-6">Welcome back</h1>
+      <h1 className="text-large-semi uppercase mb-6">Bem-vindo de volta</h1>
       <p className="text-center text-base-regular text-gray-700 mb-8">
-        Sign in to access an enhanced shopping experience.
+        Entre para melhorar a sua experiência.
       </p>
       <form className="w-full" onSubmit={onSubmit}>
         <div className="flex flex-col w-full gap-y-2">
           <Input
             label="Email"
-            {...register("email", { required: "Email is required" })}
+            {...register("email", { required: "Email é necessário" })}
             autoComplete="email"
             errors={errors}
           />
           <Input
             label="Password"
-            {...register("password", { required: "Password is required" })}
+            {...register("password", { required: "Password é necessário" })}
             type="password"
             autoComplete="current-password"
             errors={errors}
@@ -68,19 +68,19 @@ const Login = () => {
         {authError && (
           <div>
             <span className="text-rose-500 w-full text-small-regular">
-              These credentials do not match our records
+              As suas credências não estão nos nossos registos
             </span>
           </div>
         )}
-        <Button className="mt-6">Enter</Button>
+        <Button className="mt-6">Entrar</Button>
       </form>
       <span className="text-center text-gray-700 text-small-regular mt-6">
-        Not a member?{" "}
+        Não tem conta?{" "}
         <button
           onClick={() => setCurrentView(LOGIN_VIEW.REGISTER)}
           className="underline"
         >
-          Join us
+          Crie uma
         </button>
         .
       </span>

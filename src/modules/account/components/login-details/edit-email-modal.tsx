@@ -74,7 +74,7 @@ const EditEmailModal: React.FC<EditEmailModalProps> = ({ customer }) => {
             <Input
               label="Email"
               {...register("email", {
-                required: "Email is required",
+                required: "Email é necessário",
                 pattern: {
                   value: emailRegex,
                   message: "Must be a valid email",

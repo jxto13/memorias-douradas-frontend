@@ -35,7 +35,7 @@ const StoreMenu = () => {
           </button>
         </div>
         <div>
-          <h1 className="text-large-regular">Store</h1>
+          <h1 className="text-large-regular">Categorias</h1>
         </div>
         <div className="flex-1 basis-0 flex justify-end">
           <button onClick={close}>
@@ -57,7 +57,7 @@ const StoreMenu = () => {
                         onClick={close}
                       >
                         <span className="sr-only">
-                          Go to {collection.title} collection
+                         Ir para a categoria - {collection.title}
                         </span>
                         <span>{collection.title}</span>
                         <ChevronDown className="-rotate-90" />
