@@ -122,7 +122,7 @@ const Overview = ({ orders, customer }: OverviewProps) => {
                                 Total
                               </span>
                               <span>
-                                {new Date(order.created_at).toDateString()}
+                                {new Date(order.created_at).toLocaleDateString('pt-pt',{ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
                               </span>
                               <span>#{order.display_id}</span>
                               <span>

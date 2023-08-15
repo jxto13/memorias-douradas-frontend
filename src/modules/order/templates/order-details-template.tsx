@@ -1,5 +1,5 @@
 import { Order } from "@medusajs/medusa"
-import Help from "@modules/order/components/help"
+// import Help from "@modules/order/components/help"
 import Items from "@modules/order/components/items"
 import OrderDetails from "@modules/order/components/order-details"
 import OrderSummary from "@modules/order/components/order-summary"
@@ -17,7 +17,7 @@ const OrderDetailsTemplate: React.FC<OrderDetailsTemplateProps> = ({
     <div className="bg-gray-50 py-6 min-h-[calc(100vh-64px)]">
       <div className="content-container flex justify-center">
         <div className="max-w-4xl h-full bg-white w-full">
-          <OrderDetails order={order} showStatus />
+          <OrderDetails order={order} />
           <Items
             items={order.items}
             region={order.region}
@@ -30,9 +30,9 @@ const OrderDetailsTemplate: React.FC<OrderDetailsTemplateProps> = ({
             />
             <OrderSummary order={order} />
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-10">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-10">
             <Help />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -29,7 +29,6 @@ const Carousel: React.FC = () => {
 
         <div className="embla" ref={emblaRef}>
           <div className="embla__container space-x-4">
-            {console.log(data)}
             {data && data.length > 0 ? (
               data.map((product: any, i: number) => (
                 <Link

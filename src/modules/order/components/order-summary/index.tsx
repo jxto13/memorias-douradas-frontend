@@ -16,7 +16,7 @@ const OrderSummary = ({ order }: OrderSummaryProps) => {
 
   return (
     <div>
-      <h2 className="text-base-semi">Order Summary</h2>
+      <h2 className="text-base-semi">Resumo do Pedido</h2>
       <div className="text-small-regular text-gray-700 my-2">
         <div className="flex items-center justify-between text-base-regular text-gray-900 mb-2">
           <span>Subtotal</span>
@@ -25,13 +25,13 @@ const OrderSummary = ({ order }: OrderSummaryProps) => {
         <div className="flex flex-col gap-y-1">
           {order.discount_total > 0 && (
             <div className="flex items-center justify-between">
-              <span>Discount</span>
+              <span>Desconto</span>
               <span>- {getAmount(order.discount_total)}</span>
             </div>
           )}
           {order.gift_card_total > 0 && (
             <div className="flex items-center justify-between">
-              <span>Discount</span>
+              <span>Desconto</span>
               <span>- {getAmount(order.gift_card_total)}</span>
             </div>
           )}
@@ -40,7 +40,7 @@ const OrderSummary = ({ order }: OrderSummaryProps) => {
             <span>{getAmount(order.shipping_total)}</span>
           </div>
           <div className="flex items-center justify-between">
-            <span>Taxes</span>
+            <span>Taxas</span>
             <span>{getAmount(order.tax_total)}</span>
           </div>
         </div>

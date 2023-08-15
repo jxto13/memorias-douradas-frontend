@@ -32,27 +32,27 @@ const AccountNav = () => {
             <ul className="flex mb-0 justify-start items-start flex-col gap-y-4">
               <li>
                 <AccountNavLink href="/account" route={route!}>
-                  Overview
+                  Geral
                 </AccountNavLink>
               </li>
               <li>
                 <AccountNavLink href="/account/profile" route={route!}>
-                  Profile
+                  Perfil
                 </AccountNavLink>
               </li>
               <li>
                 <AccountNavLink href="/account/addresses" route={route!}>
-                  Addresses
+                  Endereços
                 </AccountNavLink>
               </li>
               <li>
                 <AccountNavLink href="/account/orders" route={route!}>
-                  Orders
+                  Encomendas
                 </AccountNavLink>
               </li>
               <li className="text-grey-700">
                 <button type="button" onClick={handleLogout}>
-                  Log out
+                  Sair
                 </button>
               </li>
             </ul>

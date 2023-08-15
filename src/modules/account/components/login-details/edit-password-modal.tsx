@@ -90,22 +90,22 @@ const EditPasswordModal: React.FC<EditPasswordModalProps> = ({ customer }) => {
     <div>
       <EditButton onClick={open} />
       <Modal isOpen={state} close={close}>
-        <Modal.Title>Edit your password</Modal.Title>
+        <Modal.Title>Editar a tua password</Modal.Title>
         <Modal.Body>
           <div className="flex flex-col gap-y-8">
             <Input
-              label="Old password"
+              label="Antiga password"
               {...register("old_password", {
-                required: "Old password é necessário",
+                required: "Antiga password é necessário",
               })}
               type="password"
               autoComplete="password"
               errors={errors}
             />
             <Input
-              label="New password"
+              label="Nova password"
               {...register("new_password", {
-                required: "New password é necessário",
+                required: "Nova password é necessário",
               })}
               type="password"
               autoComplete="new_password"
@@ -121,10 +121,10 @@ const EditPasswordModal: React.FC<EditPasswordModalProps> = ({ customer }) => {
             className="!bg-gray-200 !text-gray-900 !border-gray-200 min-h-0"
             onClick={close}
           >
-            Cancel
+            Cancelar
           </Button>
           <Button className="min-h-0" onClick={submit} disabled={submitting}>
-            Save
+            Salvar
             {submitting && <Spinner />}
           </Button>
         </Modal.Footer>

@@ -25,7 +25,7 @@ const OrderCard = ({ order }: OrderCardProps) => {
       <div className="uppercase text-large-semi mb-1">#{order.display_id}</div>
       <div className="flex items-center divide-x divide-gray-200 text-small-regular text-gray-700">
         <span className="pr-2">
-          {new Date(order.created_at).toDateString()}
+          {new Date(order.created_at).toLocaleDateString('pt-pt',{ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
         </span>
         <span className="px-2">
           {formatAmount({

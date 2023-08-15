@@ -53,8 +53,8 @@ const MainMenu = () => {
             onClick={setScreenSearch}
           >
             <Search size={24} />
-            <span placeholder="Search products" className="text-base-regular">
-              Search products
+            <span placeholder="Pesquisar Produtos" className="text-base-regular">
+              Pesquisar Produtos
             </span>
           </button>
         )}
@@ -70,7 +70,7 @@ const MainMenu = () => {
                 onClick={setScreenStore}
               >
                 <span className="sr-only">Go to Store</span>
-                <span>Store</span>
+                <span>Categorias</span>
                 <ChevronDown className="-rotate-90" />
               </button>
             </li>

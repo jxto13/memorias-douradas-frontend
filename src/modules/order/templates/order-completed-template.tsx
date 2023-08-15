@@ -1,7 +1,7 @@
 "use client"
 
 import { Order } from "@medusajs/medusa"
-import Help from "@modules/order/components/help"
+// import Help from "@modules/order/components/help"
 import Items from "@modules/order/components/items"
 import OrderDetails from "@modules/order/components/order-details"
 import OrderSummary from "@modules/order/components/order-summary"
@@ -32,9 +32,9 @@ const OrderCompletedTemplate: React.FC<OrderCompletedTemplateProps> = ({
             />
             <OrderSummary order={order} />
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-10">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-10">
             <Help />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ const Welcome = () => {
                                     alt="hero"
                                     className="object-cover object-center mx-auto rounded-lg shadow-2xl"
                                     width={500}
-                                    height={500}
+                                    height={0}
                                 />
 
                             </div>
