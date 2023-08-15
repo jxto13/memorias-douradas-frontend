@@ -27,7 +27,7 @@ const Welcome = () => {
 
                     </div>
                     <div className="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
-                        <span className="mb-8 text-xs font-bold tracking-widest text-blue-600 uppercase"> Bem-Vindo "À Memorias Douradas" </span>
+                        <span className="mb-8 text-xs font-bold tracking-widest text-blue-600 uppercase"> Bem-Vindo &apos;À Memorias Douradas&apos; </span>
                         <h1 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">Leve consigo memórias de dias felizes.</h1>
                         <p className="mb-8 text-base leading-relaxed text-left text-gray-500">Explore a nossa coleção e encontre os mais variados Pins e Crachás personalizados com as melhores paisagens da ilha de Porto Santo.
                             Neste cantinho poderá também personalizar com as suas imagens aquando da visita À ilha dourada.</p>
