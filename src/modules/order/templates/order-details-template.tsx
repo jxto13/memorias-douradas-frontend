@@ -17,7 +17,7 @@ const OrderDetailsTemplate: React.FC<OrderDetailsTemplateProps> = ({
     <div className="bg-gray-50 py-6 min-h-[calc(100vh-64px)]">
       <div className="content-container flex justify-center">
         <div className="max-w-4xl h-full bg-white w-full">
-          <OrderDetails order={order} />
+          <OrderDetails order={order} showStatus />
           <Items
             items={order.items}
             region={order.region}

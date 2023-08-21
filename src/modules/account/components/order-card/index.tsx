@@ -21,22 +21,23 @@ const OrderCard = ({ order }: OrderCardProps) => {
   }, [order])
 
   return (
-    <div className="bg-white flex flex-col">
-      <div className="uppercase text-large-semi mb-1">#{order.display_id}</div>
-      <div className="flex items-center divide-x divide-gray-200 text-small-regular text-gray-700">
-        <span className="pr-2">
-          {new Date(order.created_at).toLocaleDateString('pt-pt',{ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
-        </span>
-        <span className="px-2">
-          {formatAmount({
-            amount: order.total,
-            region: order.region,
-            includeTaxes: true,
-          })}
-        </span>
-        <span className="pl-2">{`${numberOfLines} ${
-          numberOfLines > 1 ? "items" : "item"
-        }`}</span>
+    <div className="bg-white shadow-md p-4 flex flex-col">
+      <div className="mx-auto md:w-full grid md:grid-cols-2 gap-y-2">
+        <div className="flex items-center divide-x divide-gray-200 text-small-regular text-gray-700">
+          <span className="pr-2">
+            {new Date(order.created_at).toLocaleDateString('pt-pt', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+          </span>
+          <span className="px-2">
+            {formatAmount({
+              amount: order.total,
+              region: order.region,
+              includeTaxes: true,
+            })}
+          </span>
+          <span className="pl-2">{`${numberOfLines} ${numberOfLines > 1 ? "items" : "item"
+            }`}</span>
+        </div>
+        <span className="text-gray-700 text-sm md:text-right">{order.id.split("order_")[1]}</span>
       </div>
       <div className="grid grid-cols-2 small:grid-cols-4 gap-4 my-4">
         {order.items.slice(0, 3).map((i) => {

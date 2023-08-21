@@ -116,7 +116,7 @@ const Overview = ({ orders, customer }: OverviewProps) => {
                             <div className="grid grid-cols-3 grid-rows-2 text-small-regular gap-x-4 flex-1">
                               <span className="font-semibold">Data</span>
                               <span className="font-semibold">
-                                Número de encomenda
+                                Código de encomenda
                               </span>
                               <span className="font-semibold">
                                 Total
@@ -124,7 +124,7 @@ const Overview = ({ orders, customer }: OverviewProps) => {
                               <span>
                                 {new Date(order.created_at).toLocaleDateString('pt-pt',{ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
                               </span>
-                              <span>#{order.display_id}</span>
+                              <span>{order.id.split("order_")[1]}</span>
                               <span>
                                 {formatAmount({
                                   amount: order.total,

@@ -12,7 +12,7 @@ const SignInPrompt = () => {
       </div>
       <div>
         <Link href="/account/login">
-          <Button variant="secondary">Sign in</Button>
+          <Button variant="secondary">Entrar</Button>
         </Link>
       </div>
     </div>

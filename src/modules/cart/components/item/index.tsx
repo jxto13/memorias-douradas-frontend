@@ -5,6 +5,7 @@ import LineItemPrice from "@modules/common/components/line-item-price"
 import NativeSelect from "@modules/common/components/native-select"
 import Trash from "@modules/common/icons/trash"
 import Thumbnail from "@modules/products/components/thumbnail"
+import Link from "next/link"
 
 type ItemProps = {
   item: Omit<LineItem, "beforeInsert">
@@ -22,7 +23,9 @@ const Item = ({ item, region }: ItemProps) => {
       <div className="text-base-regular flex flex-col gap-y-8">
         <div className="flex items-start justify-between">
           <div className="flex flex-col">
+          <Link href={`/products/${item.variant.product.handle}`}>
             <span>{item.title}</span>
+          </Link>
             <LineItemOptions variant={item.variant} />
           </div>
           <NativeSelect
@@ -62,7 +65,7 @@ const Item = ({ item, region }: ItemProps) => {
               onClick={() => deleteItem(item.id)}
             >
               <Trash size={14} />
-              <span>Remove</span>
+              <span>Remover</span>
             </button>
           </div>
           <div>
