@@ -67,7 +67,7 @@ const FooterNav = () => {
       </div>
       <div className="flex flex-col-reverse gap-y-4 justify-center xsmall:items-center xsmall:flex-row xsmall:items-end xsmall:justify-between">
         <span className="text-xsmall-regular text-gray-500">
-          © Copyright 2023 Memórias Douradas
+          © Copyright 2024 Memórias Douradas
         </span>
         <div className="min-w-[316px] flex xsmall:justify-end">
           <CountrySelect />

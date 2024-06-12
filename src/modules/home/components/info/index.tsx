@@ -36,7 +36,7 @@ const Info = () => {
 bg-[url('https://png.pngtree.com/background/20210709/original/pngtree-spider-web-web-star-snow-background-picture-image_503368.jpg')]
             </div> */}
 
-            <div className="content-container py-12">
+            {/* <div className="content-container py-12">
                 <div className="py-12">
                     <div className="flex flex-col items-center text-center mb-10">
                         <span className="text-2xl-regular text-gray-600 mb-3">
@@ -69,7 +69,28 @@ bg-[url('https://png.pngtree.com/background/20210709/original/pngtree-spider-web
 
 
                 </div>
+            </div> */}
+            <div className="content-container py-12">
+                <div className="py-12">
+                    <div className="flex flex-col items-center text-center mb-10">
+                        <h2 className="text-2xl font-semibold text-gray-700 mb-3">Contatos</h2>
+                        <p className="mt-3 text-gray-600">Tem dúvidas? Fale connosco!</p>
+                    </div>
+
+                    <div className="mt-10 lg:mx-auto lg:flex lg:justify-center space-y-10 lg:space-y-0 lg:space-x-10">
+                        <div className="flex flex-col items-center justify-center text-center p-4 lg:w-96 bg-white shadow-lg rounded-lg">
+                            <h3 className="text-lg font-medium text-gray-700">Email</h3>
+                            <a href="mailto:loja@memoriasdouradas.pt" className="mt-2 text-blue-600">loja@memoriasdouradas.pt</a>
+                        </div>
+
+                        <div className="flex flex-col items-center justify-center text-center p-4 lg:w-96 bg-white shadow-lg rounded-lg">
+                            <h3 className="text-lg font-medium text-gray-700">Telemóvel</h3>
+                            <p className="mt-2 text-blue-600">+351 926 249 032</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             {/* <div className="content-container mt-12">
                 <section className="mb-32">
                     <div className="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('https://mdbcdn.b-cdn.net/img/new/textures/full/284.jpg')]"></div>

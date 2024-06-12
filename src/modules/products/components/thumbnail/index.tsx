@@ -39,7 +39,7 @@ const ImageOrPlaceholder = ({
     <Image
       src={image}
       alt="Thumbnail"
-      className="absolute inset-0"
+      className="absolute inset-0 rounded-lg overflow-hidden"
       draggable={false}
       fill
       sizes="100vw"
@@ -49,7 +49,7 @@ const ImageOrPlaceholder = ({
       }}
     />
   ) : (
-    <div className="w-full h-full absolute inset-0 bg-gray-100 flex items-center justify-center">
+    <div className="w-full h-full absolute inset-0 bg-gray-100 flex items-center justify-center rounded-lg overflow-hidden">
       <PlaceholderImage size={size === "small" ? 16 : 24} />
     </div>
   )

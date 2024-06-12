@@ -60,10 +60,9 @@ const MainMenu = () => {
         )}
 
         {/* Main list of items bellow search box */}
-        <div className="flex flex-col flex-1 text-large-regular text-gray-900">
+        {/* <div className="flex flex-col flex-1 text-large-regular text-gray-900">
           <ul className="flex flex-col gap-y-2">
 
-            {/* List item for store sub menu */}
             <li className="bg-gray-50 p-4">
               <button
                 className="flex items-center justify-between w-full"
@@ -75,12 +74,12 @@ const MainMenu = () => {
               </button>
             </li>
 
-            {/* Next item goes here */}
+
           </ul>
-        </div>
-        {/* <div className="flex flex-col flex-1 text-large-regular text-gray-900">
+        </div> */}
+        <div className="flex flex-col flex-1 text-large-regular text-gray-900">
           <ul className="flex flex-col gap-y-2">
-            <li className="bg-gray-50 p-4">
+            {/* <li className="bg-gray-50 p-4">
               <Link href="/store">
                 <button
                   className="flex items-center justify-between w-full"
@@ -91,7 +90,7 @@ const MainMenu = () => {
                   <ChevronDown className="-rotate-90" />
                 </button>
               </Link>
-            </li>
+            </li> */}
             {collections ? (
               <>
                 {collections.map((collection) => (
@@ -113,7 +112,7 @@ const MainMenu = () => {
               </>
             ) : null}
           </ul>
-        </div> */}
+        </div>
 
         <div className="flex flex-col">
           <div className="flex flex-col gap-y-8 text-small-regular">

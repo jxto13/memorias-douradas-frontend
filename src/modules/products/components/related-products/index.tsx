@@ -87,7 +87,7 @@ const RelatedProducts = ({ product }: RelatedProductsProps) => {
             onClick={() => fetchNextPage()}
             className="w-72"
           >
-            Load more
+            Carregar mais
           </Button>
         </div>
       )}
