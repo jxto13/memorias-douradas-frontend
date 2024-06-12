@@ -51,7 +51,7 @@ const Carousel: React.FC = () => {
               ))
             ) : Array.from(Array(4).keys()).map((i) => (
 
-              <div className="flex-1 content-container">
+              <div key={i} className="flex-1 content-container">
                 <ul className="grid grid-cols-1 small:grid-cols-[1fr_360px] gap-x-8 py-12">
 
                   <SkeletonProductPreview />
